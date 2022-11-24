@@ -78,7 +78,7 @@
 <script lang="ts">
 import { IonInput, IonLabel, IonList, IonPage, IonContent, IonSelect, IonSelectOption } from '@ionic/vue';
 import { defineComponent } from 'vue';
-import { Storage } from '@ionic/storage';
+// import { Storage } from '@ionic/storage';
 
 
 export default defineComponent({
