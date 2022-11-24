@@ -112,6 +112,8 @@ export default defineComponent({
       }
       console.log(pond)
       axios.post("http://127.0.0.1:5000/pond", pond)
+
+      document.location = ('/tabs/ponds')
     }
   }
 });
