@@ -7,4 +7,4 @@ Team Member:
 - Delvino Ardi - 1313621025
 - Muhammad Hadiid Faathir - 1313621035
 - Rasyaad Maulana Khandiyas - 1313621020
-- Narendra Arkan Putra Darmawan - 13136
+- Narendra Arkan Putra Darmawan - 1313621043
