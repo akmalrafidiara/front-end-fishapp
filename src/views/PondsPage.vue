@@ -14,27 +14,29 @@
 
           <ion-row v-for="(pond, index) in ponds" v-bind:key="index">
             <ion-col>
-              <div class="card-pond">
-                <div class="header-pond">
-                  <h3>{{pond.name}}</h3>
-                  <h6>{{pond.location}}</h6>
-                  <p :class="[ pond.isActive == 1 ? 'green' : 'red' ]">{{pond.status}}</p>
+              <a href="pondregistrationedit" style="text-decoration: none;">
+                <div class="card-pond">
+                  <div class="header-pond">
+                    <h3>{{pond.name}}</h3>
+                    <h6>{{pond.location}}</h6>
+                    <p :class="[ pond.isActive == 1 ? 'green' : 'red' ]">{{pond.status}}</p>
+                  </div>
+                  <div>
+                    <div class="content-pond">
+                      <img src="/assets/img/calendar.svg" alt="">
+                      <p>{{ date(pond.build_at) }}</p>
+                    </div>
+                    <div class="content-pond">
+                      <img src="/assets/img/alarm.svg" alt="">
+                      <p>{{ findDay(pond.build_at) }} Hari</p>
+                    </div>
+                    <div class="content-pond">
+                      <img src="/assets/img/fish.svg" alt="">
+                      <p>{{pond.fish_alive != null ? pond.fish_alive : 0}} Ekor</p>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <div class="content-pond">
-                    <img src="/assets/img/calendar.svg" alt="">
-                    <p>{{ date(pond.build_at) }}</p>
-                  </div>
-                  <div class="content-pond">
-                    <img src="/assets/img/alarm.svg" alt="">
-                    <p>{{ findDay(pond.build_at) }} Hari</p>
-                  </div>
-                  <div class="content-pond">
-                    <img src="/assets/img/fish.svg" alt="">
-                    <p>{{pond.fish_alive != null ? pond.fish_alive : 0}} Ekor</p>
-                  </div>
-                </div>
-              </div>
+              </a>
             </ion-col>
           </ion-row>
   
