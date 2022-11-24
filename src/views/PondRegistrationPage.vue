@@ -4,7 +4,7 @@
       <ion-toolbar>
         <ion-buttons slot="start">
           <ion-back-button :text="getBackButtonText()" default-href="/tabs/ponds"></ion-back-button>
-          <h1 class="section-title">Registrasi Kolam</h1>  
+          <h3 class="section-title" style="margin-right: 10px;">Registrasi Kolam</h3>  
         </ion-buttons>
       </ion-toolbar>
     </ion-header>
@@ -44,6 +44,7 @@
           </ion-item>
         </ion-list>
         <ion-list>
+          <!-- @click.prevent="getFormValues()" -->
           <ion-button expand="block" color="tertiary" @click.prevent="getFormValues()">Registrasi</ion-button>
         </ion-list>
         <ion-list>
@@ -83,7 +84,7 @@ export default defineComponent({
       getBackButtonText: () => {
         const win = window as any;
         const mode = win && win.Ionic && win.Ionic.mode;
-        return mode === 'ios' ? 'Inbox' : '';
+        return mode === 'ios' ? 'Back' : '';
       }
     }
   },
