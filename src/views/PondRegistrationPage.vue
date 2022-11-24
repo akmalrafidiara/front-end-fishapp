@@ -26,9 +26,9 @@
           <ion-item>
             <ion-label position="stacked">Material Kolam</ion-label>
             <ion-select interface="action-sheet" v-model="material">
-              <ion-select-option value="tanah">Tanah</ion-select-option>
-              <ion-select-option value="beton">Beton</ion-select-option>
-              <ion-select-option value="terpal">Terpal</ion-select-option>
+              <ion-select-option value="1">Tanah</ion-select-option>
+              <ion-select-option value="2">Beton</ion-select-option>
+              <ion-select-option value="3">Terpal</ion-select-option>
               <!-- <ion-select-option  v-for="material in material_options" :value="material.key">{{material.value}}</ion-select-option> -->
             </ion-select>
           </ion-item>
@@ -37,8 +37,8 @@
           <ion-item>
             <ion-label position="stacked">Bentuk Kolam</ion-label>
             <ion-select interface="action-sheet" v-model="shape">
-              <ion-select-option value="kotak">Kotak</ion-select-option>
-              <ion-select-option value="bundar">Bundar</ion-select-option>
+              <ion-select-option value="1">Kotak</ion-select-option>
+              <ion-select-option value="2">Bundar</ion-select-option>
               <!-- <ion-select-option  v-for="shape in shape_options" :value="shape.key">{{shape.value}}</ion-select-option> -->
             </ion-select>
           </ion-item>
