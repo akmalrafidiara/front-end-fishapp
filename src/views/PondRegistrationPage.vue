@@ -61,6 +61,7 @@
 import { IonContent, IonPage, IonHeader, IonButtons, IonButton, IonBackButton, IonToolbar, IonList, IonInput, IonLabel, IonItem, IonSelect, IonSelectOption  } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import { add } from 'ionicons/icons';
+import axios from 'axios';
 
 
 export default defineComponent({
@@ -109,6 +110,7 @@ export default defineComponent({
         shape : this.shape
       }
       console.log(pond)
+      axios.post("http://127.0.0.1:5000/pond", pond)
     }
   }
 });
