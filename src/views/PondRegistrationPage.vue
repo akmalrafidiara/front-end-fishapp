@@ -73,13 +73,13 @@ export default defineComponent({
       material: '',
       shape: '',
       material_options: [
-        {key: 'tanah', value: 'Tanah'},
-        {key: 'beton', value: 'Beton'},
-        {key: 'terpal', value: 'Terpal'}
+        {key: 'tanah', value: 1},
+        {key: 'beton', value: 2},
+        {key: 'terpal', value: 3}
       ],
       shape_options: [
-        {key: 'kotak', value: 'Kotak'},
-        {key: 'bundar', value: 'Bundar'}
+        {key: 'kotak', value: 1},
+        {key: 'bundar', value: 2}
       ],
       getBackButtonText: () => {
         const win = window as any;
@@ -104,10 +104,10 @@ export default defineComponent({
       // console.log(this.shape)
 
       let pond = {
-        name : this.name,
-        location : this.location,
-        material : this.material,
-        shape : this.shape
+        'name' : this.name,
+        'location' : this.location,
+        'material' : this.material,
+        'shape' : this.shape
       }
       console.log(pond)
       axios.post("http://127.0.0.1:5000/pond", pond)
