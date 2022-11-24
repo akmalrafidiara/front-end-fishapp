@@ -4,6 +4,7 @@ import TabsPage from '../views/TabsPage.vue';
 import HomePage from '../views/HomePage.vue';
 import PondsPage from '../views/PondsPage.vue';
 import PondRegistrationPage from '../views/PondRegistrationPage.vue';
+import RegisrationPageEdit from '../views/RegistrationPageEdit.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -34,6 +35,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/pondregistration',
     name: 'PondRegistration',
     component: PondRegistrationPage
+  },
+  {
+    path: '/pondregistrationedit',
+    name: 'PondRegistrationEdit',
+    component: RegisrationPageEdit
   }
 ]
 
