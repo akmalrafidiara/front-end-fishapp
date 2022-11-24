@@ -1,5 +1,5 @@
 ## Front End FishApp
-#### All team member were present during discussion via Discord
+#### All team member were present and active during discussion via Discord
 
 #### Team Member:
 - Akmal Rafi Diara Putra - 1313621007
