@@ -8,3 +8,5 @@ Team Member:
 - Muhammad Hadiid Faathir - 1313621035
 - Rasyaad Maulana Khandiyas - 1313621020
 - Narendra Arkan Putra Darmawan - 1313621043
+
+![Alt text](/public/assets/img/Docum.jpg "Discord Documentation")
