@@ -1,7 +1,7 @@
-## Front end FishApp
+## Front End FishApp
 #### All team member were present during discussion via Discord
 
-Team Member:
+#### Team Member:
 - Akmal Rafi Diara Putra - 1313621007
 - Muhammad Izzat Azizan - 1313621013
 - Delvino Ardi - 1313621025
@@ -9,4 +9,5 @@ Team Member:
 - Rasyaad Maulana Khandiyas - 1313621020
 - Narendra Arkan Putra Darmawan - 1313621043
 
+#### Discord Documentation
 ![Alt text](/public/assets/img/Docum.jpg "Discord Documentation")
