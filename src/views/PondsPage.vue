@@ -16,7 +16,8 @@
             <ion-col>
               <div class="card-pond">
                 <div class="header-pond">
-                  <h3>{{pond.alias}}</h3>
+                  <h3>{{pond.name}}</h3>
+                  <h6>{{pond.location}}</h6>
                   <p :class="[ pond.isActive == 1 ? 'green' : 'red' ]">{{pond.status}}</p>
                 </div>
                 <div>
@@ -77,7 +78,8 @@ export default defineComponent({
     const ponds = ref();
     let day;
     onMounted(async () => {
-      const response = await axios.get('http://jft.web.id/fishapi/api/ponds')
+      // const response = await axios.get('http://jft.web.id/fishapi/api/ponds')
+      const response = await axios.get('http://127.0.0.1:5000/pond')
       ponds.value = response.data
       console.log(response.data)
     });
